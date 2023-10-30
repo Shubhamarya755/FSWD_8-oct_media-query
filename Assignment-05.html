@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-05</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            border: 2px solid black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            padding: 3px;
+            color: white;
+        }
+        .a,.d{
+            height: 99vh;
+            width: 10vw;
+        }
+        .b,.c{
+            height: 49vh;
+            width:80vw;
+        }
+
+        @media (max-width:520px){
+            .container{
+                display: inline-block;
+            }
+            .a{
+                height: 10vh;
+                width: 99vw;
+            }
+            .d{
+                height: 10vh;
+                width: 99vw;
+            }
+            .b,.c{
+            height: 10vh;
+            width:99vw;
+
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main" id="box-01">
+            <div class="a" style="background-color: gray;"> box-A</div>
+        </div>
+        <div class="main" id="box-02">
+            <div class="b" style="background-color: red;"> box-B</div>
+            <div class="c" style="background-color: green"> box-C</div>
+        </div>
+        <footer class="main" id="box-03">
+            <div class="d" style="background-color: gray;"> box-D</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

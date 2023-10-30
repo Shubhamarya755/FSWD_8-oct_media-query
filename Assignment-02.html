@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet-02</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .main{
+            padding: 2px;
+            width: 450px
+        }
+        .main>img{
+            max-width: 400px;
+            object-fit:fill;
+        }
+
+        /*  */
+        @media (max-width:800px) and (min-width:501px){
+            .container{
+                display: flex;
+                flex-wrap: wrap; 
+            }
+
+        }
+        @media(max-width:500px){
+            .container{
+                display: block;
+                border:1px solid green;
+                
+            }
+            .main{
+                min-width: 100px;
+            }
+            .main>img{
+                min-width: 100px;
+                
+                object-fit: contain;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main"><img src="https://cdn.pixabay.com/photo/2023/10/17/10/32/building-8320842_640.png" alt="pic-1" ></div>
+        <div class="main"><img src="https://cdn.pixabay.com/photo/2023/10/17/10/32/building-8320842_640.png" alt="pic-2"></div>
+        <div class="main"><img src="https://cdn.pixabay.com/photo/2023/10/17/10/32/building-8320842_640.png" alt="pic-3"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-04</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .main{
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            min-height:100px;
+        }
+        #a{background-color: red;}
+        #b{background-color: green;}
+        #c{background-color: blue;}
+        #d{background-color: yellow;}
+        @media (max-width:720px) and (min-width:481px){
+            .container{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        @media (max-width:480px){
+            .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto,1fr);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main" id="a">Box-01</div>
+        <div class="main" id="b">Box-02</div>
+        <div class="main" id="c">Box-03</div>
+        <div class="main" id="d">Box-04</div>
+    </div>
+    
+</body>
+</html>
